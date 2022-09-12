@@ -1,21 +1,31 @@
 {
   "name": "accounts",
   "version": "0.1.0",
+  "author": "Robert Roszak robert.roszak2@gmail.com",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.1",
+    "normalize-scss": "^7.0.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
     "react-scripts": "5.0.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test && jest",
+    "eject": "react-scripts eject",
+    "fix": "eslint src/ --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +44,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.7",
+    "jest": "^27.5.1",
+    "prettier": "2.7.1",
+    "sass": "^1.54.8",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.74.0"
   }
 }
